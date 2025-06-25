@@ -22,30 +22,32 @@ You need to upload **two `.txt` files**:
 
 ### 1. OCR Output File (e.g., `ocr_input.txt`)
 
-Each line should be:
+Each line should be in the format:
 
 predicted_word confidence_score
 
-makefile
-Copy
-Edit
 
 **Example:**
+
 మనము 0.92
+
 తెనుగు 0.85
+
 
 ---
 
 ### 2. Telugu Dictionary File (e.g., `combined_telugu_dictionary.tsv`)
 
-A TSV (tab-separated) file with:
+A TSV (tab-separated) file with two columns:
+
+word frequency
 
 
 **Example:**
-మనము 1532
-తెలుగు 5021
 
----
+మనము 1532
+
+తెలుగు 5021
 
 ## 📤 Output Format
 
