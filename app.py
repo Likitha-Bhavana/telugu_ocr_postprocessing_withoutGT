@@ -39,7 +39,7 @@ def read_and_separate_data(input_file):
                 impure_entries.append((idx, word, conf))
     return telugu_entries, impure_entries
 
-def post_process_telugu(telugu_entries, dictionary, edit_dist_threshold=3, prob_threshold=0.85):
+def post_process_telugu(telugu_entries, dictionary, edit_dist_threshold=3, prob_threshold=0.95):
     corrected_entries, dict_words = [], list(dictionary.keys())
     for idx, word, prob in telugu_entries:
         if word in dictionary or prob > prob_threshold:
