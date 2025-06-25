@@ -1,71 +1,93 @@
-📝 Telugu OCR Post-Processing Tool (Without Ground Truth)
-This web application provides a post-processing pipeline for Telugu OCR output without requiring ground truth data. It cleans and corrects predicted words using a frequency-based dictionary and edit distance logic.
+# 📝 Telugu OCR Post-Processing Tool (Without Ground Truth)
 
-🔗 Live App:
-👉 https://telugu-ocr-postprocessing-withoutgt.onrender.com
+This web app processes raw Telugu OCR output without needing ground truth. It corrects low-confidence or invalid Telugu words using a frequency-based dictionary and edit distance logic.
 
-💡 Features
-✅ Automatically separates valid vs. invalid Telugu words
+🔗 **Live Demo**:  
+👉 [https://telugu-ocr-postprocessing-withoutgt.onrender.com](https://telugu-ocr-postprocessing-withoutgt.onrender.com)
 
-🔍 Uses edit distance and word frequency to correct misspellings
+---
 
-📊 Summarizes how many words were corrected, skipped, or left valid
+## ✅ Features
 
-💾 Outputs a downloadable .txt file with corrections and statuses
+- Automatically separates valid vs. invalid Telugu words
+- Uses edit distance and word frequency to correct misspellings
+- Summarizes how many words were corrected, skipped, or marked valid
+- Outputs a downloadable `.txt` file with corrections and status
 
-📂 Input Format
-You need to upload two .txt files:
+---
 
-OCR Output File (e.g., ocr_input.txt)
+## 📂 Input Format
 
-Format: predicted_word <tab or space> confidence_score
+You need to upload **two `.txt` files**:
 
-Example:
+### 1. OCR Output File (e.g., `ocr_input.txt`)
 
+Each line should be:
+
+predicted_word confidence_score
+
+makefile
 Copy
 Edit
-మనము 0.92  
-తెనుగు 0.85  
-Telugu Dictionary File (TSV format, e.g., combined_telugu_dictionary.tsv)
 
-Format: word <tab> frequency
+**Example:**
+మనము 0.92
+తెనుగు 0.85
 
-Example:
+---
 
-yaml
-Copy
-Edit
-మనము	1532  
-తెలుగు	5021  
-📤 Output Format
-The app provides a downloadable .txt file with columns:
+### 2. Telugu Dictionary File (e.g., `combined_telugu_dictionary.tsv`)
 
-mathematica
-Copy
-Edit
-Prediction	PostProcessed	Probability	CorrectionStatus
-And a summary at the end:
+A TSV (tab-separated) file with:
 
-yaml
-Copy
-Edit
+
+**Example:**
+మనము 1532
+తెలుగు 5021
+
+---
+
+## 📤 Output Format
+
+The app provides a downloadable file with the following columns:
+
+Prediction PostProcessed Probability CorrectionStatus
+
+At the end of the file, a summary is included:
+
 ======== SUMMARY ========
 ✅ Total entries: 2000
-⤴️ Corrected Telugu entries: 321
+🔁 Corrected Telugu entries: 321
 🟢 Valid Telugu entries: 1421
 ⚠️ Skipped impure/invalid entries: 258
-🧪 How It Works
-Words not in the dictionary and below confidence threshold are corrected.
 
-Correction is based on edit distance and maximum frequency match.
 
-Words with high confidence or non-Telugu patterns are left unchanged or skipped.
+---
 
-🚀 Deployment Info
-Built with: Flask, Bootstrap, Pandas, editdistance
+## ⚙️ How It Works
 
-Hosted on: Render
+- Words that are not in the dictionary and have low confidence are corrected.
+- Correction is based on **minimum edit distance** and **maximum frequency**.
+- High-confidence words or those with non-Telugu characters are left unchanged or skipped.
 
-👩‍💻 Author
-Likitha Bhavana
-GitHub Profile
+---
+
+## 🧰 Built With
+
+- Flask
+- Bootstrap (for frontend)
+- Pandas
+- editdistance (library)
+
+---
+
+## 👩‍💻 Author
+
+**Likitha Bhavana**  
+GitHub: [@likitha-b-1120](https://github.com/likitha-b-1120)
+
+---
+
+## 🌐 Hosted on
+
+[Render](https://render.com)
