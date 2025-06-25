@@ -49,18 +49,23 @@ word frequency
 
 తెలుగు 5021
 
-## 📤 Output Format
+## 🖨️ Output Format
 
 The app provides a downloadable file with the following columns:
 
 Prediction PostProcessed Probability CorrectionStatus
 
+
 At the end of the file, a summary is included:
 
 ======== SUMMARY ========
+
 ✅ Total entries: 2000
-🔁 Corrected Telugu entries: 321
+
+🟦 Corrected Telugu entries: 321
+
 🟢 Valid Telugu entries: 1421
+
 ⚠️ Skipped impure/invalid entries: 258
 
 
