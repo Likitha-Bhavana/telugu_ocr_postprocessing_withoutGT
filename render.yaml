@@ -1,0 +1,5 @@
+type: web
+name: telugu-ocr-cleaner
+env: python
+buildCommand: pip install -r requirements.txt
+startCommand: python app.py
