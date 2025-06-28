@@ -100,7 +100,7 @@ def index():
                     </div>
                     <div class="mb-3">
                         <label class="form-label">🎯 Probability Threshold</label>
-                        <input type="text" name="prob_threshold" class="form-control" value="0.85">
+                        <input type="text" name="prob_threshold" class="form-control" value="0.95">
                     </div>
                     <button type="submit" class="btn btn-primary w-100">🚀 Process and Download Output</button>
                 </form>
@@ -114,7 +114,7 @@ def process():
     input_file = request.files['input_file']
     dict_file = request.files['dict_file']
     dist_threshold = int(request.form.get('edit_dist_threshold', 3))
-    prob_threshold = float(request.form.get('prob_threshold', 0.85))
+    prob_threshold = float(request.form.get('prob_threshold', 0.95))
 
     input_path = os.path.join(UPLOAD_FOLDER, secure_filename(input_file.filename))
     dict_path = os.path.join(UPLOAD_FOLDER, secure_filename(dict_file.filename))
