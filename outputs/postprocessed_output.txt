@@ -1,0 +1,13 @@
+GT	Prediction	PostProcessedPrediction	Probability	WRR_Correct	Post_WRR_Correct
+
+WRR_Before_PostProcessing	0.0000
+CRR_Before_PostProcessing	0.0000
+WRR_After_PostProcessing	0.0000
+CRR_After_PostProcessing	0.0000
+
+======== POST-PROCESSING ANALYSIS ========
+✅ Words compared with dictionary: 0
+
+❌ Skipped Low-Prob (no correction found): 0
+
+⚠️ High-Confidence Wrong Predictions Skipped: 0

@@ -15,6 +15,24 @@ telugu_pattern = re.compile(r'^[\u0C00-\u0C7F]+$')
 def is_telugu_word(word):
     return bool(telugu_pattern.fullmatch(word))
 
+def clean_telugu_word(word):
+    """Remove all non-Telugu characters from the word."""
+    return ''.join(ch for ch in word if re.match(r'[\u0C00-\u0C7F]', ch))
+
+def get_char_metadata(word):
+    """Store positions and values of special (non-Telugu) characters."""
+    return [(i, ch) for i, ch in enumerate(word) if not re.match(r'[\u0C00-\u0C7F]', ch)]
+
+def reinsert_special_chars(corrected_word, special_meta):
+    """Reinsert special characters into their original positions."""
+    corrected = list(corrected_word)
+    for pos, char in special_meta:
+        if pos < len(corrected):
+            corrected.insert(pos, char)
+        else:
+            corrected.append(char)
+    return ''.join(corrected)
+
 def read_dictionary(dict_path):
     df = pd.read_csv(dict_path, sep="\t", header=None, names=["word", "frequency"])
     df = df[df["word"].apply(is_telugu_word)]
@@ -33,26 +51,44 @@ def read_and_separate_data(input_file):
                 continue
             word, conf = parts
             conf = float(conf)
-            if is_telugu_word(word):
+            if is_telugu_word(word) or re.search(r'[\u0C00-\u0C7F]', word):
                 telugu_entries.append((idx, word, conf))
             else:
                 impure_entries.append((idx, word, conf))
     return telugu_entries, impure_entries
 
 def post_process_telugu(telugu_entries, dictionary, edit_dist_threshold=3, prob_threshold=0.90):
-    corrected_entries, dict_words = [], list(dictionary.keys())
+    corrected_entries = []
+    dict_words = list(dictionary.keys())
+
     for idx, word, prob in telugu_entries:
-        if word in dictionary or prob > prob_threshold:
+        original_word = word
+        clean_word = clean_telugu_word(word)
+        special_meta = get_char_metadata(word)
+
+        # Skip if there's no actual Telugu content
+        if not clean_word:
             corrected_entries.append((idx, word, word, prob))
             continue
-        distances = [(w, editdistance.eval(word, w)) for w in dict_words]
+
+        # If clean word is already valid or confidence is high, trust OCR
+        if clean_word in dictionary or prob > prob_threshold:
+            final_word = reinsert_special_chars(clean_word, special_meta) if special_meta else clean_word
+            corrected_entries.append((idx, original_word, final_word, prob))
+            continue
+
+        # Perform edit distance on cleaned word
+        distances = [(w, editdistance.eval(clean_word, w)) for w in dict_words]
         min_dist = min(d[1] for d in distances)
         tied = [w for w, d in distances if d == min_dist]
+
         if min_dist > edit_dist_threshold or not tied:
-            corrected_entries.append((idx, word, word, prob))
+            corrected_entries.append((idx, original_word, original_word, prob))
         else:
             best = max(tied, key=lambda w: dictionary.get(w, 0))
-            corrected_entries.append((idx, word, best, prob))
+            final_word = reinsert_special_chars(best, special_meta) if special_meta else best
+            corrected_entries.append((idx, original_word, final_word, prob))
+
     return corrected_entries
 
 def merge_and_write_output(output_path, corrected_telugu, impure_entries):
@@ -61,11 +97,11 @@ def merge_and_write_output(output_path, corrected_telugu, impure_entries):
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write("Prediction\tPostProcessed\tProbability\tCorrectionStatus\n")
         for _, pred, post, prob in all_entries:
-            status = "skipped" if not is_telugu_word(pred) else ("valid" if pred == post else "corrected")
+            status = "skipped" if not re.search(r'[\u0C00-\u0C7F]', pred) else ("valid" if pred == post else "corrected")
             f.write(f"{pred}\t{post}\t{prob:.6f}\t{status}\n")
         total = len(all_entries)
-        corrected = sum(1 for entry in all_entries if entry[1] != entry[2] and is_telugu_word(entry[1]))
-        skipped = sum(1 for entry in all_entries if not is_telugu_word(entry[1]))
+        corrected = sum(1 for entry in all_entries if entry[1] != entry[2] and re.search(r'[\u0C00-\u0C7F]', entry[1]))
+        skipped = sum(1 for entry in all_entries if not re.search(r'[\u0C00-\u0C7F]', entry[1]))
         valid = total - corrected - skipped
         f.write("\n======== SUMMARY ========\n")
         f.write(f"✅ Total entries: {total}\n")
