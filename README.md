@@ -9,9 +9,9 @@ This web app processes raw Telugu OCR output without needing ground truth. It co
 
 ## 🎥 Setup Tutorial (📽️ Video Guide)
 
-If you prefer a video guide, watch this short screen recording on how to clone and run the app locally:
+▶️ [Watch the tutorial video on Google Drive](https://drive.google.com/file/d/1AbCdEfGhIjKlMnOpQR/view?usp=sharing)
 
-▶️ [git_clone.mkv](./git_clone.mkv)
+> 📌 You can stream the video online without downloading.
 
 ---
 
