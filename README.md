@@ -7,6 +7,14 @@ This web app processes raw Telugu OCR output without needing ground truth. It co
 
 ---
 
+## 🎥 Setup Tutorial (📽️ Video Guide)
+
+If you prefer a video guide, watch this short screen recording on how to clone and run the app locally:
+
+▶️ [git_clone.mkv](./git_clone.mkv)
+
+---
+
 ## ✅ Features
 
 - Automatically separates valid vs. invalid Telugu words
