@@ -7,6 +7,14 @@ This web app processes raw Telugu OCR output without needing ground truth. It co
 
 ---
 
+## 🎥 Setup Tutorial (📽️ Video Guide)
+
+▶️ [Watch the tutorial video on Google Drive](https://drive.google.com/file/d/1M50HqWtnsZNeHmGo-XIqDBexrdbthyIT/view?usp=sharing)
+
+> 📌 You can stream the video online without downloading.
+
+---
+
 ## ✅ Features
 
 - Automatically separates valid vs. invalid Telugu words
