@@ -2,3 +2,4 @@ pandas
 tqdm
 editdistance
 flask
+opencv-python
