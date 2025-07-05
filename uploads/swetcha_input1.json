@@ -1,0 +1,992 @@
+{
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_1.jpg": {
+        "pred": "ఊహించని",
+        "word_prob": 0.99918133,
+        "coordinates": [
+            726,
+            737,
+            478,
+            115
+        ],
+        "line_number": 1
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_10.jpg": {
+        "pred": "అతడిలో",
+        "word_prob": 0.9928844,
+        "coordinates": [
+            352,
+            1170,
+            227,
+            80
+        ],
+        "line_number": 5
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_11.jpg": {
+        "pred": "ఏదో",
+        "word_prob": 0.9775428,
+        "coordinates": [
+            621,
+            1164,
+            133,
+            83
+        ],
+        "line_number": 5
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_12.jpg": {
+        "pred": "ఆకర",
+        "word_prob": 0.9936498,
+        "coordinates": [
+            782,
+            1179,
+            133,
+            68
+        ],
+        "line_number": 5
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_13.jpg": {
+        "pred": "ణ",
+        "word_prob": 0.41645268,
+        "coordinates": [
+            925,
+            1190,
+            66,
+            57
+        ],
+        "line_number": 5
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_14.jpg": {
+        "pred": "వుంది.",
+        "word_prob": 0.94122726,
+        "coordinates": [
+            1036,
+            1173,
+            154,
+            83
+        ],
+        "line_number": 5
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_15.jpg": {
+        "pred": "తెలటి",
+        "word_prob": 0.97121066,
+        "coordinates": [
+            1241,
+            1170,
+            168,
+            77
+        ],
+        "line_number": 5
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_16.jpg": {
+        "pred": "యూని",
+        "word_prob": 0.9986985,
+        "coordinates": [
+            1446,
+            1170,
+            191,
+            74
+        ],
+        "line_number": 5
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_17.jpg": {
+        "pred": "గా",
+        "word_prob": 0.5502595,
+        "coordinates": [
+            1294,
+            1234,
+            62,
+            48
+        ],
+        "line_number": 6
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_18.jpg": {
+        "pred": "ఫామ్లో,",
+        "word_prob": 0.96109456,
+        "coordinates": [
+            270,
+            1269,
+            241,
+            89
+        ],
+        "line_number": 7
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_19.jpg": {
+        "pred": "లైట్ల",
+        "word_prob": 0.9623132,
+        "coordinates": [
+            522,
+            1269,
+            144,
+            83
+        ],
+        "line_number": 7
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_2.jpg": {
+        "pred": "అదృష్టం",
+        "word_prob": 0.99425125,
+        "coordinates": [
+            1232,
+            731,
+            382,
+            133
+        ],
+        "line_number": 1
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_20.jpg": {
+        "pred": "కాంతిలా్కి",
+        "word_prob": 0.85886437,
+        "coordinates": [
+            656,
+            1220,
+            291,
+            132
+        ],
+        "line_number": 7
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_21.jpg": {
+        "pred": "అతడి",
+        "word_prob": 0.9606864,
+        "coordinates": [
+            925,
+            1272,
+            142,
+            69
+        ],
+        "line_number": 7
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_22.jpg": {
+        "pred": "మొహం",
+        "word_prob": 0.91450036,
+        "coordinates": [
+            1083,
+            1275,
+            209,
+            66
+        ],
+        "line_number": 7
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_23.jpg": {
+        "pred": "తళతళ",
+        "word_prob": 0.999523,
+        "coordinates": [
+            1305,
+            1266,
+            174,
+            69
+        ],
+        "line_number": 7
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_24.jpg": {
+        "pred": "మెరు",
+        "word_prob": 0.9083361,
+        "coordinates": [
+            1504,
+            1272,
+            136,
+            66
+        ],
+        "line_number": 7
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_25.jpg": {
+        "pred": "-",
+        "word_prob": 0.79403,
+        "coordinates": [
+            536,
+            1331,
+            69,
+            45
+        ],
+        "line_number": 8
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_26.jpg": {
+        "pred": "గ",
+        "word_prob": 0.3024269,
+        "coordinates": [
+            592,
+            1331,
+            63,
+            45
+        ],
+        "line_number": 8
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_27.jpg": {
+        "pred": "సోంది.",
+        "word_prob": 0.99755526,
+        "coordinates": [
+            262,
+            1366,
+            182,
+            77
+        ],
+        "line_number": 9
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_28.jpg": {
+        "pred": ":",
+        "word_prob": 0.33197024,
+        "coordinates": [
+            282,
+            1415,
+            48,
+            46
+        ],
+        "line_number": 10
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_29.jpg": {
+        "pred": "అతడి",
+        "word_prob": 0.9863473,
+        "coordinates": [
+            352,
+            1456,
+            153,
+            78
+        ],
+        "line_number": 11
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_3.jpg": {
+        "pred": "బ",
+        "word_prob": 0.498659,
+        "coordinates": [
+            1373,
+            828,
+            162,
+            83
+        ],
+        "line_number": 2
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_30.jpg": {
+        "pred": "వయస్సు",
+        "word_prob": 0.977588,
+        "coordinates": [
+            510,
+            1462,
+            218,
+            89
+        ],
+        "line_number": 11
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_31.jpg": {
+        "pred": "ఇరనై",
+        "word_prob": 0.9941591,
+        "coordinates": [
+            735,
+            1462,
+            151,
+            80
+        ],
+        "line_number": 11
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_32.jpg": {
+        "pred": "లోపున",
+        "word_prob": 0.97018665,
+        "coordinates": [
+            870,
+            1456,
+            206,
+            89
+        ],
+        "line_number": 11
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_33.jpg": {
+        "pred": "వుంటుంది.",
+        "word_prob": 0.99223256,
+        "coordinates": [
+            1086,
+            1462,
+            259,
+            75
+        ],
+        "line_number": 11
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_34.jpg": {
+        "pred": "నాలు",
+        "word_prob": 0.98406965,
+        "coordinates": [
+            1378,
+            1468,
+            151,
+            63
+        ],
+        "line_number": 11
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_35.jpg": {
+        "pred": "గేళ్ళ",
+        "word_prob": 0.99628365,
+        "coordinates": [
+            1513,
+            1448,
+            136,
+            112
+        ],
+        "line_number": 11
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_36.jpg": {
+        "pred": "నుంచి",
+        "word_prob": 0.9991582,
+        "coordinates": [
+            259,
+            1556,
+            159,
+            77
+        ],
+        "line_number": 12
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_37.jpg": {
+        "pred": "సీవ్యూ",
+        "word_prob": 0.9988515,
+        "coordinates": [
+            419,
+            1535,
+            192,
+            127
+        ],
+        "line_number": 12
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_38.jpg": {
+        "pred": "హోటలో",
+        "word_prob": 0.9218142,
+        "coordinates": [
+            615,
+            1544,
+            268,
+            86
+        ],
+        "line_number": 12
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_39.jpg": {
+        "pred": "ఆకడు",
+        "word_prob": 0.9581627,
+        "coordinates": [
+            887,
+            1556,
+            165,
+            65
+        ],
+        "line_number": 12
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_4.jpg": {
+        "pred": "టెంపోరావ్",
+        "word_prob": 0.9992158,
+        "coordinates": [
+            1264,
+            959,
+            370,
+            89
+        ],
+        "line_number": 3
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_40.jpg": {
+        "pred": "పనిచేస్తున్నాడు.",
+        "word_prob": 0.9990771,
+        "coordinates": [
+            1057,
+            1544,
+            431,
+            101
+        ],
+        "line_number": 12
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_41.jpg": {
+        "pred": "ం",
+        "word_prob": 0.26954797,
+        "coordinates": [
+            782,
+            1611,
+            57,
+            45
+        ],
+        "line_number": 13
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_42.jpg": {
+        "pred": "టివ్స్",
+        "word_prob": 0.8607364,
+        "coordinates": [
+            1490,
+            1547,
+            162,
+            104
+        ],
+        "line_number": 14
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_43.jpg": {
+        "pred": "రూపంలో",
+        "word_prob": 0.99842626,
+        "coordinates": [
+            262,
+            1646,
+            255,
+            75
+        ],
+        "line_number": 15
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_44.jpg": {
+        "pred": "జోజు",
+        "word_prob": 0.7038574,
+        "coordinates": [
+            531,
+            1641,
+            182,
+            80
+        ],
+        "line_number": 15
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_45.jpg": {
+        "pred": "యిరవె",
+        "word_prob": 0.9890072,
+        "coordinates": [
+            726,
+            1652,
+            180,
+            69
+        ],
+        "line_number": 15
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_46.jpg": {
+        "pred": "పెన",
+        "word_prob": 0.99047637,
+        "coordinates": [
+            893,
+            1652,
+            133,
+            69
+        ],
+        "line_number": 15
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_47.jpg": {
+        "pred": "వస్తోంది.",
+        "word_prob": 0.9300024,
+        "coordinates": [
+            1039,
+            1646,
+            215,
+            78
+        ],
+        "line_number": 15
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_48.jpg": {
+        "pred": "జీతం",
+        "word_prob": 0.9952305,
+        "coordinates": [
+            1297,
+            1646,
+            132,
+            72
+        ],
+        "line_number": 15
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_49.jpg": {
+        "pred": "ఎక్కువ",
+        "word_prob": 0.88347834,
+        "coordinates": [
+            1440,
+            1644,
+            206,
+            91
+        ],
+        "line_number": 15
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_5.jpg": {
+        "pred": "హెూటల్",
+        "word_prob": 0.88645536,
+        "coordinates": [
+            262,
+            1079,
+            305,
+            104
+        ],
+        "line_number": 4
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_50.jpg": {
+        "pred": ".",
+        "word_prob": 0.58422536,
+        "coordinates": [
+            884,
+            1708,
+            48,
+            42
+        ],
+        "line_number": 16
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_51.jpg": {
+        "pred": "వ",
+        "word_prob": 0.37271506,
+        "coordinates": [
+            914,
+            1714,
+            33,
+            36
+        ],
+        "line_number": 16
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_52.jpg": {
+        "pred": "రాకపోయినా",
+        "word_prob": 0.99967206,
+        "coordinates": [
+            267,
+            1746,
+            347,
+            74
+        ],
+        "line_number": 17
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_53.jpg": {
+        "pred": "అక్కడే",
+        "word_prob": 0.99156755,
+        "coordinates": [
+            621,
+            1725,
+            250,
+            119
+        ],
+        "line_number": 17
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_54.jpg": {
+        "pred": "టిఫిన్,",
+        "word_prob": 0.93335116,
+        "coordinates": [
+            896,
+            1743,
+            180,
+            83
+        ],
+        "line_number": 17
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_55.jpg": {
+        "pred": "భోజనం",
+        "word_prob": 0.99891776,
+        "coordinates": [
+            1115,
+            1734,
+            209,
+            89
+        ],
+        "line_number": 17
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_56.jpg": {
+        "pred": "రగైరాలభి",
+        "word_prob": 0.9268785,
+        "coordinates": [
+            1335,
+            1743,
+            311,
+            77
+        ],
+        "line_number": 17
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_57.jpg": {
+        "pred": "స్తున్నాయి.",
+        "word_prob": 0.96610963,
+        "coordinates": [
+            276,
+            1842,
+            303,
+            107
+        ],
+        "line_number": 18
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_58.jpg": {
+        "pred": "హాలో",
+        "word_prob": 0.9994219,
+        "coordinates": [
+            358,
+            1945,
+            177,
+            77
+        ],
+        "line_number": 19
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_59.jpg": {
+        "pred": "లెటు",
+        "word_prob": 0.99643725,
+        "coordinates": [
+            525,
+            1951,
+            138,
+            68
+        ],
+        "line_number": 19
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_6.jpg": {
+        "pred": "బేంర్",
+        "word_prob": 0.8817632,
+        "coordinates": [
+            586,
+            1073,
+            156,
+            81
+        ],
+        "line_number": 4
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_60.jpg": {
+        "pred": "ప్రశాశవంతంగా",
+        "word_prob": 0.8969066,
+        "coordinates": [
+            671,
+            1951,
+            399,
+            77
+        ],
+        "line_number": 19
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_61.jpg": {
+        "pred": "వెల్గుతున్నాయి.",
+        "word_prob": 0.97633094,
+        "coordinates": [
+            1083,
+            1948,
+            384,
+            86
+        ],
+        "line_number": 19
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_62.jpg": {
+        "pred": "ఎవరో",
+        "word_prob": 0.9546288,
+        "coordinates": [
+            1481,
+            1939,
+            168,
+            80
+        ],
+        "line_number": 19
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_63.jpg": {
+        "pred": "న",
+        "word_prob": 0.21247023,
+        "coordinates": [
+            428,
+            2006,
+            63,
+            48
+        ],
+        "line_number": 20
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_64.jpg": {
+        "pred": "",
+        "word_prob": 0.0,
+        "coordinates": [
+            539,
+            1997,
+            121,
+            66
+        ],
+        "line_number": 20
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_65.jpg": {
+        "pred": "o",
+        "word_prob": 0.86071116,
+        "coordinates": [
+            1133,
+            2006,
+            54,
+            48
+        ],
+        "line_number": 21
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_66.jpg": {
+        "pred": "తను",
+        "word_prob": 0.9994003,
+        "coordinates": [
+            264,
+            2044,
+            116,
+            74
+        ],
+        "line_number": 22
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_67.jpg": {
+        "pred": "చూసే",
+        "word_prob": 0.9281411,
+        "coordinates": [
+            390,
+            2038,
+            171,
+            80
+        ],
+        "line_number": 22
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_68.jpg": {
+        "pred": "'ేలుల్వె",
+        "word_prob": 0.87501675,
+        "coordinates": [
+            583,
+            2032,
+            276,
+            86
+        ],
+        "line_number": 22
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_69.jpg": {
+        "pred": "పు",
+        "word_prob": 0.98201233,
+        "coordinates": [
+            835,
+            2047,
+            83,
+            80
+        ],
+        "line_number": 22
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_7.jpg": {
+        "pred": "యూనిఫామ్లో",
+        "word_prob": 0.99415314,
+        "coordinates": [
+            773,
+            1076,
+            402,
+            86
+        ],
+        "line_number": 4
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_70.jpg": {
+        "pred": "నడండం",
+        "word_prob": 0.8433844,
+        "coordinates": [
+            960,
+            2035,
+            218,
+            78
+        ],
+        "line_number": 22
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_71.jpg": {
+        "pred": "గమనించి",
+        "word_prob": 0.9994982,
+        "coordinates": [
+            1226,
+            2047,
+            236,
+            63
+        ],
+        "line_number": 22
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_72.jpg": {
+        "pred": "రాజు",
+        "word_prob": 0.9996133,
+        "coordinates": [
+            1507,
+            2053,
+            142,
+            63
+        ],
+        "line_number": 22
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_73.jpg": {
+        "pred": "వేగంగా",
+        "word_prob": 0.9601312,
+        "coordinates": [
+            276,
+            2141,
+            209,
+            65
+        ],
+        "line_number": 23
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_74.jpg": {
+        "pred": "అక్కడకు",
+        "word_prob": 0.9983787,
+        "coordinates": [
+            498,
+            2135,
+            268,
+            100
+        ],
+        "line_number": 23
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_75.jpg": {
+        "pred": "చేరుకున్నాడు.",
+        "word_prob": 0.9829383,
+        "coordinates": [
+            779,
+            2132,
+            358,
+            98
+        ],
+        "line_number": 23
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_76.jpg": {
+        "pred": "ఒక",
+        "word_prob": 0.9999448,
+        "coordinates": [
+            361,
+            2252,
+            104,
+            71
+        ],
+        "line_number": 24
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_77.jpg": {
+        "pred": "విదేశీయుడు",
+        "word_prob": 0.99893415,
+        "coordinates": [
+            481,
+            2249,
+            296,
+            65
+        ],
+        "line_number": 24
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_78.jpg": {
+        "pred": "కుర్చీలో",
+        "word_prob": 0.98517877,
+        "coordinates": [
+            791,
+            2237,
+            209,
+            107
+        ],
+        "line_number": 24
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_79.jpg": {
+        "pred": "ఒంట",
+        "word_prob": 0.93899786,
+        "coordinates": [
+            1036,
+            2246,
+            221,
+            77
+        ],
+        "line_number": 24
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_8.jpg": {
+        "pred": "వున్నాడు",
+        "word_prob": 0.9417732,
+        "coordinates": [
+            1194,
+            1082,
+            244,
+            89
+        ],
+        "line_number": 4
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_80.jpg": {
+        "pred": ".",
+        "word_prob": 0.6548684,
+        "coordinates": [
+            1235,
+            2269,
+            39,
+            34
+        ],
+        "line_number": 24
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_81.jpg": {
+        "pred": "రి",
+        "word_prob": 0.9989444,
+        "coordinates": [
+            1259,
+            2252,
+            48,
+            62
+        ],
+        "line_number": 24
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_82.jpg": {
+        "pred": "గా",
+        "word_prob": 0.9983456,
+        "coordinates": [
+            1320,
+            2260,
+            92,
+            54
+        ],
+        "line_number": 24
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_83.jpg": {
+        "pred": "కూర్చుని",
+        "word_prob": 0.9992269,
+        "coordinates": [
+            1443,
+            2249,
+            206,
+            95
+        ],
+        "line_number": 24
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_84.jpg": {
+        "pred": "వున్నాడు.",
+        "word_prob": 0.97932565,
+        "coordinates": [
+            273,
+            2345,
+            265,
+            89
+        ],
+        "line_number": 25
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_85.jpg": {
+        "pred": "అతడివైపు",
+        "word_prob": 0.9947995,
+        "coordinates": [
+            551,
+            2345,
+            276,
+            86
+        ],
+        "line_number": 25
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_86.jpg": {
+        "pred": "నవ్వుతూ",
+        "word_prob": 0.99936455,
+        "coordinates": [
+            826,
+            2336,
+            223,
+            110
+        ],
+        "line_number": 25
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_87.jpg": {
+        "pred": "చూని",
+        "word_prob": 0.9069911,
+        "coordinates": [
+            1083,
+            2342,
+            148,
+            69
+        ],
+        "line_number": 25
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_88.jpg": {
+        "pred": "రాజు",
+        "word_prob": 0.9105032,
+        "coordinates": [
+            1250,
+            2357,
+            138,
+            54
+        ],
+        "line_number": 25
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_89.jpg": {
+        "pred": "శల్యూట్",
+        "word_prob": 0.99296004,
+        "coordinates": [
+            1399,
+            2336,
+            244,
+            107
+        ],
+        "line_number": 25
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_9.jpg": {
+        "pred": "రాజు.",
+        "word_prob": 0.987741,
+        "coordinates": [
+            1478,
+            1094,
+            159,
+            54
+        ],
+        "line_number": 4
+    },
+    "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_90.jpg": {
+        "pred": "చేశాడు.",
+        "word_prob": 0.9795058,
+        "coordinates": [
+            279,
+            2439,
+            212,
+            74
+        ],
+        "line_number": 26
+    }
+}
