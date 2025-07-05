@@ -1,5 +1,3 @@
-# Telugu OCR Post-Processing for Multiple Pages with Per-Page Navigation
-
 from flask import Flask, render_template_string, request, send_from_directory, redirect, url_for, session
 import os, json, pandas as pd, editdistance, re, cv2, zipfile, uuid, pickle
 from PIL import Image
@@ -173,6 +171,14 @@ def upload():
 def serve_cropped(filename):
     return send_from_directory(CROPPED_FOLDER, filename)
 
+@app.route('/download_page/<page_id>')
+def download_page_csv(page_id):
+    filename = f"output_page_{page_id}.csv"
+    filepath = os.path.join(UPLOAD_FOLDER, filename)
+    if os.path.exists(filepath):
+        return send_from_directory(UPLOAD_FOLDER, filename, as_attachment=True)
+    return "File not found.", 404
+
 @app.route('/process_page/<int:page>')
 def process_page(page):
     page_keys = session.get('pages', [])
@@ -199,6 +205,11 @@ def process_page(page):
     dist_thresh = 3
     prob_thresh = 0.90
     rows, summary = post_process_and_crop(entries, dictionary, image_path, dist_thresh, prob_thresh)
+
+    # Save to CSV for current page
+    page_csv_path = os.path.join(UPLOAD_FOLDER, f"output_page_{page_id}.csv")
+    df = pd.DataFrame(rows, columns=["Image", "Prediction", "Post-Processed", "Probability", "Status"])
+    df.to_csv(page_csv_path, index=False)
 
     next_page = page + 1
     prev_page = page - 1 if page > 0 else None
@@ -242,15 +253,18 @@ def process_page(page):
             <p>Total: {{ summary.total }}, Corrected: {{ summary.corrected }}, Valid: {{ summary.valid }}, Skipped: {{ summary.skipped }}</p>
         </div>
         <div class="d-flex justify-content-between align-items-center">
-            {% if prev_page is not none %}<a href="/process_page/{{ prev_page }}" class="btn btn-secondary">⬅️ Previous Page</a>{% endif %}
-            {% if next_page < pages|length %}
-                <div class="text-end">
+            <a href="/download_page/{{ page_id }}" class="btn btn-outline-primary">⬇️ Download This Page's Output</a>
+            <div>
+                {% if prev_page is not none %}
+                    <a href="/process_page/{{ prev_page }}" class="btn btn-secondary me-2">⬅️ Previous Page</a>
+                {% endif %}
+                {% if next_page < pages|length %}
                     <button class="btn btn-success" onclick="showSpinnerAndNavigate('/process_page/{{ next_page }}')">➡️ Process Next Page</button>
                     <div id="nextspinner" class="spinner-border text-success ms-2" role="status" style="display:none">
                         <span class="visually-hidden">Processing...</span>
                     </div>
-                </div>
-            {% endif %}
+                {% endif %}
+            </div>
         </div>
     </div></body></html>
     ''', rows=rows, summary=summary, page_id=page_id, next_page=next_page, prev_page=prev_page, pages=page_keys)
