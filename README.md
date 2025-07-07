@@ -51,7 +51,9 @@ A JSON file containing OCR results. Each entry includes:
     "coordinates": [352, 1170, 227, 80],
     "line_number": 5
   }
-}
+} ```
+
+---
 
 ### 2. Page Images (ZIP) (e.g., `inputimages_1.zip`)
 
