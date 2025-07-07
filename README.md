@@ -75,7 +75,7 @@ A TSV (tab-separated values) file with two columns:
 The app provides a downloadable file with the following columns:
 
 ```
-Prediction    PostProcessed    Probability    CorrectionStatus
+Image    Prediction    PostProcessed    Probability    CorrectionStatus
 ```
 
 At the end of the file, a summary is included:
@@ -104,7 +104,9 @@ At the end of the file, a summary is included:
 - Flask  
 - Bootstrap (for frontend)  
 - Pandas  
-- editdistance (Python library)  
+- editdistance (Python library)
+- Open CV
+- Pillow (Python library)
 
 ---
 
