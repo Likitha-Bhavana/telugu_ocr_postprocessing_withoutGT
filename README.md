@@ -26,25 +26,39 @@ This web app processes raw Telugu OCR output without needing ground truth. It co
 
 ## 📂 Input Format
 
-You need to upload **two `.txt` files**:
+To use the **Telugu OCR Correction Tool**, upload the following files through the interface:
 
-### 1. OCR Output File (e.g., `ocr_input.txt`)
-
-Each line should be in the format:
-
-predicted_word confidence_score
-
+### 1. OCR JSON File  
+**(e.g., `input_1.json`)**  
+A JSON file containing OCR results. Each entry includes:
+- Predicted word (`pred`)
+- Confidence score (`word_prob`)
+- Bounding box coordinates (`coordinates`)
+- Line number (`line_number`)
 
 **Example:**
+```json
+{
+  "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_1.jpg": {
+    "pred": "ఊహించని",
+    "word_prob": 0.99918133,
+    "coordinates": [726, 737, 478, 115],
+    "line_number": 1
+  },
+  "0a0da77d-ffe9-486d-b7f1-6467421a73e2_000001_word_10.jpg": {
+    "pred": "అతడిలో",
+    "word_prob": 0.9928844,
+    "coordinates": [352, 1170, 227, 80],
+    "line_number": 5
+  }
+}
 
-మనము 0.92
+### 2. Page Images (ZIP) (e.g., `inputimages_1.zip`)
 
-తెనుగు 0.85
+A ZIP archive containing all input page images. The filenames in this archive should match the keys in the OCR JSON file. These images are used to crop and display word-level image regions for manual verification.
 
 
----
-
-### 2. Telugu Dictionary File (e.g., `combined_telugu_dictionary.tsv`)
+### 3. Telugu Dictionary File (e.g., `combined_telugu_dictionary.tsv`)
 
 A TSV (tab-separated) file with two columns:
 
