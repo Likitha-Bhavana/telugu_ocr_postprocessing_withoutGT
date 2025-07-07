@@ -9,8 +9,7 @@ This web app processes raw Telugu OCR output without needing ground truth. It co
 
 ## 🎥 Setup Tutorial (📽️ Video Guide)
 
-▶️ [Watch the tutorial video on Google Drive](https://drive.google.com/file/d/1mlWLx0e1LPqfl3JSUh4gt2AhdY4W6wY3/view?usp=sharing)
-
+▶️ [Watch the tutorial video on Google Drive](https://drive.google.com/file/d/1mlWLx0e1LPqfl3JSUh4gt2AhdY4W6wY3/view?usp=sharing)  
 > 📌 You can stream the video online without downloading.
 
 ---
@@ -51,47 +50,44 @@ A JSON file containing OCR results. Each entry includes:
     "coordinates": [352, 1170, 227, 80],
     "line_number": 5
   }
-} ```
+}
+```
 
----
-
-### 2. Page Images (ZIP) (e.g., `inputimages_1.zip`)
-
+### 2. Page Images ZIP  
+**(e.g., `inputimages_1.zip`)**  
 A ZIP archive containing all input page images. The filenames in this archive should match the keys in the OCR JSON file. These images are used to crop and display word-level image regions for manual verification.
 
-
-### 3. Telugu Dictionary File (e.g., `combined_telugu_dictionary.tsv`)
-
-A TSV (tab-separated) file with two columns:
-
-word frequency
-
+### 3. Telugu Dictionary File  
+**(e.g., `combined_telugu_dictionary.tsv`)**  
+A TSV (tab-separated values) file with two columns:  
+`word    frequency`
 
 **Example:**
+```
+మనము	1532
+తెలుగు	5021
+```
 
-మనము 1532
-
-తెలుగు 5021
+---
 
 ## 🖨️ Output Format
 
 The app provides a downloadable file with the following columns:
 
-Prediction PostProcessed Probability CorrectionStatus
-
+```
+Prediction    PostProcessed    Probability    CorrectionStatus
+```
 
 At the end of the file, a summary is included:
 
+```
 ======== SUMMARY ========
 
-✅ Total entries: 2000
-
-🟦 Corrected Telugu entries: 321
-
-🟢 Valid Telugu entries: 1421
-
+✅ Total entries: 2000  
+🟦 Corrected Telugu entries: 321  
+🟢 Valid Telugu entries: 1421  
 ⚠️ Skipped impure/invalid entries: 258
-
+```
 
 ---
 
@@ -105,10 +101,10 @@ At the end of the file, a summary is included:
 
 ## 🧰 Built With
 
-- Flask
-- Bootstrap (for frontend)
-- Pandas
-- editdistance (library)
+- Flask  
+- Bootstrap (for frontend)  
+- Pandas  
+- editdistance (Python library)  
 
 ---
 
