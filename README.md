@@ -113,7 +113,7 @@ At the end of the file, a summary is included:
 ## 👩‍💻 Author
 
 **Likitha Bhavana**  
-GitHub: [@likitha-b-1120](https://github.com/likitha-b-1120)
+GitHub: [@Likitha-Bhavana](https://github.com/Likitha-Bhavana)
 
 ---
 
